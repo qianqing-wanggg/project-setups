@@ -1,5 +1,5 @@
 # tensorflow
-##Linux setup
+## GPU setup
 The procedure for Ubuntu 18.04 can be found [here][Install CUDA with apt]
 
 [Install CUDA with apt]:https://www.tensorflow.org/install/gpu#install_cuda_with_apt
