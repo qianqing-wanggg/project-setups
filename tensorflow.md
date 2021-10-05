@@ -1,4 +1,4 @@
-# tips-and-tricks
+# tensorflow
 
 ## cuDNN
 install the cuDNN library with the correct version, refer to the documentation [2.3.4.1 Ubuntu network Installation][NVIDIA CUDNN]
