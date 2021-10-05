@@ -18,4 +18,6 @@ to check the package version in the repository, use:
 ## errors
 * cannot find libcusolver.so.11
   
+  export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:/usr/local/cuda-11.0/lib64
+  
   sudo ln -s /usr/local/cuda-11.0/targets/x86_64-linux/lib/libcusolver.so.10 /usr/local/cuda-11.0/targets/x86_64-linux/lib/libcusolver.so.11
