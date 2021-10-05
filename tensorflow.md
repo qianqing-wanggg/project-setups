@@ -1,4 +1,6 @@
 # tensorflow
+##Linux setup
+[Install CUDA with apt][https://www.tensorflow.org/install/gpu#install_cuda_with_apt]
 
 ## cuDNN
 install the cuDNN library with the correct version, refer to the documentation [2.3.4.1 Ubuntu network Installation][NVIDIA CUDNN]
