@@ -1,0 +1,4 @@
+# docker
+docker.errors.DockerException: Error while fetching server API version
+
+sudo chmod 666 /var/run/docker.sock
