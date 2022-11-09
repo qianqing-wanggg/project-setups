@@ -17,6 +17,7 @@ to check the package version in the repository, use:
   
 ## errors
 * cannot find libcusolver.so.11
+  sudo find / -name 'libcudart.so.11.0'
   
   export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:/usr/local/cuda-11.0/lib64
   
@@ -27,3 +28,29 @@ to check the package version in the repository, use:
   reinstall cuda with deb(local) option
   
   https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
+
+
+## GPU driver
+* problem: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detecte
+  
+  sudo apt-get -y install cuda
+  
+  ubuntu-drivers devices
+  
+  sudo apt install nvidia-driver-520
+  
+  
+  Mauel:
+  Nvidia graphics drivers were missing.
+    sudo lshw -C display
+
+    https://www.nvidia.com/Download/index.aspx?lang=en-us
+    The NVIDIA driver provided by Ubuntu can be installed by launching the
+     "Software & Updates" application, and by selecting the NVIDIA driver from the
+     "Additional Drivers" tab
+  
+  Second-problem
+  https://github.com/NVIDIA/nvidia-docker/issues/1328
+  
+  TEST:
+  tf.config.list_physical_devices('GPU')
