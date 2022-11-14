@@ -5,7 +5,7 @@ ML course project 2: reproducibiliyt challenge - [The State of Sparse Training i
 
 ## Main steps
 1. Check GPU by:
-  > nvidia-smi
+  > nvidia-smi<br>
   If Nvidia graphics drivers were missing, *The NVIDIA driver provided by Ubuntu can be installed by launching the "Software & Updates" application, and by selecting the NVIDIA driver from the "Additional Drivers" tab*.
 2. install GPU support tensorflow by following [official guidelines](https://www.tensorflow.org/install/gpu#install_cuda_with_apt) (cudatoolkit=11.2 cudnn=8.1.0)
 3. install tensorflow with pip specifying the version 2.9.2 (tensorflow=2.9.2)
