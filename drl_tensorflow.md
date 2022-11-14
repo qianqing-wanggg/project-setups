@@ -5,22 +5,32 @@ ML course project 2: reproducibiliyt challenge - [The State of Sparse Training i
 
 ## Main steps
 1. Check GPU by:
-  > nvidia-smi<br>
+  
+  > nvidia-smi
+  
   If Nvidia graphics drivers were missing, *The NVIDIA driver provided by Ubuntu can be installed by launching the "Software & Updates" application, and by selecting the NVIDIA driver from the "Additional Drivers" tab*.
 2. install GPU support tensorflow by following [official guidelines](https://www.tensorflow.org/install/gpu#install_cuda_with_apt) (cudatoolkit=11.2 cudnn=8.1.0)
 3. install tensorflow with pip specifying the version 2.9.2 (tensorflow=2.9.2)
 4. downgrade tensorflow from 2.10 to 2.9.2. issue with **cuBLAS** and [solution](https://github.com/google-research/multinerf/issues/47)
 5. install tensorflow probality version that is compatible with tensorflow version [0.17.0 & 2.9.2](https://github.com/tensorflow/probability/releases)
+  
   > pip install tensorflow_probability==0.17.0
 
 ## Other steps
 - when such problem pops out:
+  
   > "RuntimeError: The Session graph is empty. Add operations to the graph before calling run()"
+  
   add the [following codes](https://github.com/OlafenwaMoses/ImageAI/issues/400):
+  
   > tf.compat.v1.disable_eager_execution()
+
 - when such problem pops out:
+  
   > cannot find libcusolver.so.11
+  
   you need to find the missing file first and add it to path:
+  
   > sudo find / -name 'libcudart.so.11.0'
   > export LD_LIBRARY_PATH=/usr/local/cuda-11.0/lib64:/usr/local/cuda-11.0/lib64
 
