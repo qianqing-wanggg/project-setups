@@ -56,7 +56,7 @@ to check the package version in the repository, use:
   tf.config.list_physical_devices('GPU')
   
  
-  ## One successful example
+  # One successful example
   
   install GPU support by following commands suggested at [here][Install CUDA with apt] (cudatoolkit=11.2 cudnn=8.1.0)
   
