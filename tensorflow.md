@@ -56,26 +56,26 @@ to check the package version in the repository, use:
   tf.config.list_physical_devices('GPU')
   
  
-  # One successful example
+ # One successful example
   
-  install GPU support by following commands suggested at [here][Install CUDA with apt] (cudatoolkit=11.2 cudnn=8.1.0)
-  
-  install tensorflow with pip specifying the version 2.9.2 (tensorflow=2.9.2)
-  
-  ### encoutered problem and solutions
-  #### cuBLAS
-  downgrade tensorflow from 2.10 to 2.9.2
-  
-  https://github.com/google-research/multinerf/issues/47
-  
-  #### Tensorflow
-  "RuntimeError: The Session graph is empty. Add operations to the graph before calling run()"
-  https://github.com/OlafenwaMoses/ImageAI/issues/400
-  
-  Add tf.compat.v1.disable_eager_execution() in the starting of algorithm
-  
-  #### Tensorflow probability
-  install tensorflow probality version that is in compile with tensorflow version (0.17.0 & 2.9.2)
-  https://github.com/tensorflow/probability/releases
- 
+install GPU support by following commands suggested at [here][Install CUDA with apt] (cudatoolkit=11.2 cudnn=8.1.0)
+
+install tensorflow with pip specifying the version 2.9.2 (tensorflow=2.9.2)
+
+### encoutered problem and solutions
+#### cuBLAS
+downgrade tensorflow from 2.10 to 2.9.2
+
+https://github.com/google-research/multinerf/issues/47
+
+#### Tensorflow
+"RuntimeError: The Session graph is empty. Add operations to the graph before calling run()"
+https://github.com/OlafenwaMoses/ImageAI/issues/400
+
+Add tf.compat.v1.disable_eager_execution() in the starting of algorithm
+
+#### Tensorflow probability
+install tensorflow probality version that is in compile with tensorflow version (0.17.0 & 2.9.2)
+https://github.com/tensorflow/probability/releases
+
   
