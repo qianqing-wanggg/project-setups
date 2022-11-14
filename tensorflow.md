@@ -76,6 +76,8 @@ Add tf.compat.v1.disable_eager_execution() in the starting of algorithm
 
 #### Tensorflow probability
 install tensorflow probality version that is in compile with tensorflow version (0.17.0 & 2.9.2)
+  pip install tensorflow_probability==0.17.0
+  
 https://github.com/tensorflow/probability/releases
 
   
